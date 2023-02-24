@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* tailwind works with a minimum width more like mobile version first */
+/* font from google */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap');
+
+/* apply all the styling in the tailwind like symbols and stuff */
+
+@layer base {
+    body{
+        @apply font-[Raleway];
+    }
+    li{
+        @apply px-4;
+        @apply cursor-pointer;
+    }
+
+}
