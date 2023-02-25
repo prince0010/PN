@@ -1,7 +1,7 @@
 // rafce - Generate functional component (es7 extension) 
 
 import React, {useState} from 'react'
-import {FaBars, FaTimes} from 'react-icons/fa'
+import {FaBars, FaTimes, FaGithub, FaLinkedin, FaTwitter} from 'react-icons/fa'
 import Logo from '../assets/logo.png'
 
 const Navbar = () => {
@@ -33,7 +33,8 @@ const Navbar = () => {
       {/* md:hidden if the width is equal to 768px or it comes to the medium width then it will not hidden the FaBars and it will hidden the home,about,skills,work and contact in the upper portion */}
       {/* z-10 this is where it will display the hamburger icon while its on mobile menu in the mobile menu panel design */}
       <div onClick={clickHandle} className='md:hidden z-10'>
-        <FaBars />
+        {/* Terninary operator if !nav is true then it will display the fnbars and if false then disaply the times */}
+        {!nav ? <FaBars /> : <FaTimes />}
 
       </div>
 
@@ -53,10 +54,33 @@ const Navbar = () => {
       </div>
 
       {/* Social icons */}
-      <div className='hidden'>
+      <div className='flex fixed flex-col top-[35%] left-0'>
+        {/* <ul className='text-zinc-900'> */}
+        <ul>
+              {/* ml-[-100px] (margin-left) iyang i move ang container na LI sa left and then ang hover:ml-[-7px] pag ma hover iyang i move ang container pa right side og kung mas greater than -7px na mas mugamay ang hover ana  */}
+          {/* duration-300 is equivalent to 3milliseconds or 3seconds */}
+          <li className='w-[160px] h-[60px] flex justify-between items-center bg-slate-900 ml-[-100px] hover:ml-[-7px] duration-300 rounded-r-full'>
+            <a className='flex justify-between items-center w-full  text-gray-100' 
+            href="/"> 
+            Github
+          <FaGithub size={30}/>
+          </a></li>
+          <li className='w-[160px] h-[60px] flex justify-between items-center bg-blue-900 ml-[-100px] hover:ml-[-7px] duration-300 rounded-r-full	'>
+             <a className='flex justify-between items-center w-full  text-gray-100'
+             href="/">
+               Linkedin 
+          <FaLinkedin size={30}/>
+          </a></li>
+          <li className='w-[160px] h-[60px] flex justify-between items-center bg-blue-400 ml-[-100px] hover:ml-[-7px] duration-300 rounded-r-full'>
+            <a className=' flex justify-between  items-center  w-full text-gray-100'
+            href="/">
+               Twitter 
+               <FaTwitter size={30}/></a></li>
+        </ul>
       </div>
     </div>
   )
 }
 
+// it is for the Navbar function will be global and it can be import anywhere in this folder
 export default Navbar
