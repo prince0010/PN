@@ -20,8 +20,8 @@ const Navbar = () => {
         <img src={Logo} alt="Logo Image" style={{width: '50px'}} />
       </div>
         {/* menu */}
-        {/* hidden md:flex is when the the width is 768 less it will hidden the unlisted and listed which is home,about,skills,work,contact */}
-        <ul className='hidden md:flex '>
+        {/* hidden md:max-lg:flex (THE md:max-lg:?)is when the the width is 768 less it will hidden the unlisted and listed which is home,about,skills,work,contact */}
+        <ul className='hidden md:max-lg:flex '>
           <li>Home</li>
           <li>About</li>
           <li>Skills</li>
@@ -54,7 +54,8 @@ const Navbar = () => {
       </div>
 
       {/* Social icons */}
-      <div className='flex fixed flex-col top-[35%] left-0'>
+      {/* breakpoint hidden lg:flex either 1028px */}
+      <div className='hidden lg:flex fixed flex-col top-[35%] left-0'>
         {/* <ul className='text-zinc-900'> */}
         <ul>
               {/* ml-[-100px] (margin-left) iyang i move ang container na LI sa left and then ang hover:ml-[-7px] pag ma hover iyang i move ang container pa right side og kung mas greater than -7px na mas mugamay ang hover ana  */}
@@ -66,13 +67,13 @@ const Navbar = () => {
           <FaGithub size={30}/>
           </a></li>
           <li className='w-[160px] h-[60px] flex justify-between items-center bg-blue-900 ml-[-100px] hover:ml-[-7px] duration-300 rounded-r-full	'>
-             <a className='flex justify-between items-center w-full  text-gray-100'
+             <a className='flex justify-between items-center w-full text-gray-100'
              href="/">
                Linkedin 
           <FaLinkedin size={30}/>
           </a></li>
           <li className='w-[160px] h-[60px] flex justify-between items-center bg-blue-400 ml-[-100px] hover:ml-[-7px] duration-300 rounded-r-full'>
-            <a className=' flex justify-between  items-center  w-full text-gray-100'
+            <a className='flex justify-between items-center w-full text-gray-100'
             href="/">
                Twitter 
                <FaTwitter size={30}/></a></li>
