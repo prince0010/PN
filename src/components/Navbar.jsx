@@ -63,19 +63,19 @@ const Navbar = () => {
           {/* duration-300 is equivalent to 3milliseconds or 3seconds */}
           <li className='w-[160px] h-[60px] flex justify-between items-center bg-slate-900 ml-[-100px] hover:ml-[-7px] duration-300 rounded-r-full'>
             <a className='flex justify-between items-center w-full  text-gray-100' 
-            href="/"> 
+            href= 'https://github.com/prince0010'> 
             Github
           <FaGithub size={30}/>
           </a></li>
           <li className='w-[160px] h-[60px] flex justify-between items-center bg-blue-900 ml-[-100px] hover:ml-[-7px] duration-300 rounded-r-full	'>
              <a className='flex justify-between items-center w-full text-gray-100'
-             href="/">
+             href='https://www.linkedin.com/in/prince-nagac-083a95148/'>
                Linkedin 
           <FaLinkedin size={30}/>
           </a></li>
           <li className='w-[160px] h-[60px] flex justify-between items-center bg-blue-400 ml-[-100px] hover:ml-[-7px] duration-300 rounded-r-full'>
             <a className='flex justify-between items-center w-full text-gray-100'
-            href="/">
+            href='https://twitter.com/kumaneko404'>
                Twitter 
                <FaTwitter size={30}/></a></li>
         </ul>
