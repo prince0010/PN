@@ -92,6 +92,73 @@ const Work = () => {
                 </div>
               </div>
         {/* End of 3rd Item Grid (Work Card Images and its information) */}
+
+           {/* 4th Grid Item  (Work Card Images and its information)  */}
+           <div style={{backgroundImage: `url(${RealEstate})`}} 
+              className='shadow-lg shadow-[#030c16] rounded-md group container flex justify-center items-center mx-auto content-div'>   
+                {/*Hover effects*/}
+                <div className='opacity-0 group-hover:opacity-100'>
+                  {/* Card */}
+                  {/* tracking-wider is letter spacing in tailwind css */}
+                  <span className='text-xl font-bold text-white tracking-wider'>
+                      Real Estate Web Application
+                    <div className='pt-8 text-center'> 
+              <a href="/">
+                <button className='text-center py-3 px-4 m-2 rounded-lg bg-white text-gray-700 font-bold text-lg'> Demo </button>
+              </a>
+              <a href="/">
+                <button className='text-center py-3 px-4 m-2 rounded-lg bg-white text-gray-700 font-bold text-lg'> Code</button>
+              </a>
+                    </div>
+                  </span>
+                </div>
+              </div>
+        {/* End of 4th Item Grid (Work Card Images and its information) */}
+
+           {/* 5th Grid Item  (Work Card Images and its information)  */}
+           <div style={{backgroundImage: `url(${WorkImg})`}} 
+              className='shadow-lg shadow-[#030c16] rounded-md group container flex justify-center items-center mx-auto content-div'>   
+                {/*Hover effects*/}
+                <div className='opacity-0 group-hover:opacity-100'>
+                  {/* Card */}
+                  {/* tracking-wider is letter spacing in tailwind css */}
+                  <span className='text-xl font-bold text-white tracking-wider'>
+                      Real Estate Web Application
+                    <div className='pt-8 text-center'> 
+              <a href="/">
+                <button className='text-center py-3 px-4 m-2 rounded-lg bg-white text-gray-700 font-bold text-lg'> Demo </button>
+              </a>
+              <a href="/">
+                <button className='text-center py-3 px-4 m-2 rounded-lg bg-white text-gray-700 font-bold text-lg'> Code</button>
+              </a>
+                    </div>
+                  </span>
+                </div>
+              </div>
+        {/* End of 5th Item Grid (Work Card Images and its information) */}
+
+           {/* 6th Grid Item  (Work Card Images and its information)  */}
+           <div style={{backgroundImage: `url(${RealEstate})`}} 
+              className='shadow-lg shadow-[#030c16] rounded-md group container flex justify-center items-center mx-auto content-div'>   
+                {/*Hover effects*/}
+                <div className='opacity-0 group-hover:opacity-100'>
+                  {/* Card */}
+                  {/* tracking-wider is letter spacing in tailwind css */}
+                  <span className='text-xl font-bold text-white tracking-wider'>
+                      Real Estate Web Application
+                    <div className='pt-8 text-center'> 
+              <a href="/">
+                <button className='text-center py-3 px-4 m-2 rounded-lg bg-white text-gray-700 font-bold text-lg'> Demo </button>
+              </a>
+              <a href="/">
+                <button className='text-center py-3 px-4 m-2 rounded-lg bg-white text-gray-700 font-bold text-lg'> Code</button>
+              </a>
+                    </div>
+                  </span>
+                </div>
+              </div>
+        {/* End of 6th Item Grid (Work Card Images and its information) */}
+
             </div>
         </div>
     </div>
