@@ -8,7 +8,7 @@ const About = () => {
         {/* Container of the ALL ABOUT */}
         <div className=' flex flex-col justify-center items-center w-full h-full '>
          {/* Parent div container for the This about na unsa content ani na div */}
-         <div className='max-w-[1000px] w-full grid grid-cols-2 gap-8 '>
+         <div className='max-w-[1000px] w-full grid grid-cols-2 gap-8'>
             {/* Container for the P Tag */}
             {/* small screen or sm: ? is the screen size limit is 640px */}
             <div className='sm:text-right px-3 pb-8 pl-4'>

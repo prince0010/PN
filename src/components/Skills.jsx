@@ -16,7 +16,7 @@ const Skills = () => {
     <div name = 'skills' className='w-full h-screen  bg-[#0a192f] text-gray-300'>
         {/* Container */}
         <div className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full' >
-            <div >
+            <div>
                 <p className='text-4xl font-bold inline border-b-4 border-orange-300 text-orange-300'>Skills</p>
                 <p className=' py-4'>These are the Languages that I've learned so far..</p>
             </div>
@@ -53,7 +53,7 @@ const Skills = () => {
                 </div>
               <div className=' shadow-[#040c16] shadow-md hover:scale-110 duration-300'>
                     <img className='w-20 mx-auto' src={TAILWIND} alt="Tailwind Css icon" />
-                    <p className='my-4' >TAILWIND CSS</p>
+                    <p className='my-4'> TAILWIND CSS</p>
                 </div>
             </div>
         </div>
