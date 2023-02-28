@@ -7,6 +7,7 @@ import Logo from '../assets/logo.png'
 const Navbar = () => {
 
   // Keeping the state, nav and setnav is a created or gihunahunaan na value para sa useState naa sa sulod sa bracket ang nav og setnav since its value for the use of useState for the future
+  // and returning a stateful value og function para ma update ang value og pwede ang function pud
   const [nav, setnav] = useState(false)
   //Click function with () => (and it is common convention with an arrow function) and no gonna use a bracket since its only one-
   //that we're going to set the value of nav which is the opposite of nav ex: setnav(!nav) so if its true it will set it as a false and if its false it will set it as a true
@@ -20,8 +21,8 @@ const Navbar = () => {
         <img src={Logo} alt="Logo Image" style={{width: '50px'}} />
       </div>
         {/* menu */}
-        {/* hidden md:max-lg:flex (THE md:max-lg:?)is when the the width is 768 less it will hidden the unlisted and listed which is home,about,skills,work,contact */}
-        <ul className='hidden md:max-lg:flex '>
+        {/* hidden md:flex (THE md:?)is when the the width is 768 less it will hidden the unlisted and listed which is home,about,skills,work,contact */}
+        <ul className='hidden md:flex '>
           <li>Home</li>
           <li>About</li>
           <li>Skills</li>
