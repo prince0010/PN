@@ -87,24 +87,24 @@ const Navbar = () => {
               {/* ml-[-100px] (margin-left) iyang i move ang container na LI sa left and then ang hover:ml-[-7px] pag ma hover iyang i move ang container pa right side og kung mas greater than -7px na mas mugamay ang hover ana  */}
           {/* duration-300 is equivalent to 3milliseconds or 3seconds */}
           <li className='w-[160px] h-[60px] flex justify-between items-center bg-slate-900 ml-[-100px] hover:ml-[-7px] duration-300 rounded-r-full'>
-            <a className='flex justify-between items-center w-full  text-gray-100' 
+            <a className='flex justify-between items-center w-full font-bold  text-gray-100' 
             href= 'https://github.com/prince0010'> 
             Github
           <FaGithub size={30}/>
           </a></li>
           <li className='w-[160px] h-[60px] flex justify-between items-center bg-blue-900 ml-[-100px] hover:ml-[-7px] duration-300 rounded-r-full	'>
-             <a className='flex justify-between items-center w-full text-gray-100'
+             <a className='flex justify-between items-center w-full font-bold  text-gray-100'
              href='https://www.linkedin.com/in/prince-nagac-083a95148/'>
                Linkedin 
           <FaLinkedin size={30}/>
           </a></li>
           <li className='w-[160px] h-[60px] flex justify-between items-center bg-blue-400 ml-[-100px] hover:ml-[-7px] duration-300 rounded-r-full'>
-            <a className='flex justify-between items-center w-full text-gray-100'
+            <a className='flex justify-between items-center w-full font-bold  text-gray-100'
             href='https://twitter.com/kumaneko404'>
                Twitter 
                <FaTwitter size={30}/></a></li>
-               <li className='w-[160px] h-[60px] flex justify-between items-center bg-blue-400 ml-[-100px] hover:ml-[-7px] duration-300 rounded-r-full'>
-                <a className='text-gray-100 flex justify-between items-center w-full' 
+               <li className='w-[160px] h-[60px] flex justify-between items-center bg-red-400 ml-[-100px] hover:ml-[-7px] duration-300 rounded-r-full'>
+                <a className='text-gray-100 flex font-bold justify-between items-center w-full' 
                 href="mailto:princenagac12@gmail.com">
                   {/* mailto: (is for linking your email acc into smth) */}
                   Gmail
