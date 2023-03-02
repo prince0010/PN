@@ -7,7 +7,7 @@ import Homedefinition from './Text/Homedefinition';
 const Home = () => {
 
   function buttonClicked () {
-      console.log('Clicked');
+      console.log(' Test Clicked');
   }
 
   return (

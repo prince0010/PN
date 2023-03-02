@@ -2,6 +2,7 @@
 
 import React, {useState} from 'react'
 import {FaBars, FaTimes, FaGithub, FaLinkedin, FaTwitter} from 'react-icons/fa'
+import  { SiGmail } from 'react-icons/si'
 import Logo from '../assets/logo.png'
 import {Link} from 'react-scroll'
 
@@ -102,7 +103,16 @@ const Navbar = () => {
             href='https://twitter.com/kumaneko404'>
                Twitter 
                <FaTwitter size={30}/></a></li>
+               <li className='w-[160px] h-[60px] flex justify-between items-center bg-blue-400 ml-[-100px] hover:ml-[-7px] duration-300 rounded-r-full'>
+                <a className='text-gray-100 flex justify-between items-center w-full' 
+                href="mailto:princenagac12@gmail.com">
+                  {/* mailto: (is for linking your email acc into smth) */}
+                  Gmail
+                  <SiGmail size={30} />
+                </a>
+               </li>
         </ul>
+
       </div>
     </div>
   )
