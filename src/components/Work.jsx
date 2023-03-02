@@ -5,18 +5,17 @@ import WorkImg from '../assets/projects/workImg.jpeg'
 const Work = () => {
   return (
     // Parent Div
-    <div name = 'work' className='bg-[#0a192f] md:h-screen w-full text-gray-300'>
+    <div name = 'work' className='pt-10 bg-[#0a192f] lg:h-[120vh] md:h-screen w-full text-gray-300'>
         {/* Child Div Container of Content in the Parent DIV */}
         <div className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center h-full w-full' >
             {/* Container for P tag */}
-            <div className='pb-8'>
+            <div>
                 <p className='text-4xl font-bold inline border-b-4 border-orange-300'>
                    Work
                 </p>
                 <p className='py-6'>Check out some of my Projects: </p>
             </div>
            
-
           {/* This is the Parent Div of all Container Card in this DIV's*/}
            {/* This is the PARENT CONTAINER OF THE ALL THE CARDS AND IMAGES ADDED IN THIS PART OF WORK.JSX COMPONENT  */}
            {/* Container */}
@@ -26,7 +25,7 @@ const Work = () => {
             IN EACH SCRENSIZE(mobileversion{which has no command since reactjs is always default in mobile device in making it responsive}, THE SM: {small screensize}, THE MD:{the medium size}, THE LG:?)  */}
       {/* !!NEW TASK, CREATE A ANIMATION HOVER IN EVERY CARD IN THIS CARD WORKS LIKE ZOOM IN AND OUT AND NAAY TEXT MU TRANSITION TO PASAKA AND PAG DILI MA HOVER MU PANAOG ANG TEXY DAYON */}
           <div className=' grid sm:grid-cols-2 md:grid-cols-3 gap-4'>
-           
+          
           {/* Container of Card Item */}
           {/* the content-div is a custom css for the Images that will be add in this card content like background-img: no-repeat, just look the custom css that I add in the index.css */}
           
@@ -44,7 +43,7 @@ const Work = () => {
                 <button className='text-center py-3 px-4 m-2 rounded-lg bg-white text-gray-700 font-bold text-xl sm:text-base md:text-base'> Demo </button>
               </a>
               <a href="https://github.com/prince0010/PN">
-                <button className='text-center py-3 px-4 m-2 rounded-lg bg-white text-gray-700 font-bold text-xl sm:text-base md:text-base'> Code</button>
+                <button className='text-center py-3 px-4 m-2 rounded-lg bg-white text-gray-700 font-bold text-base sm:text-base md:text-base'> Code</button>
               </a>
                     </div>
                   </span>
@@ -62,10 +61,10 @@ const Work = () => {
                       Real Estate Web Application
                     <div className='pt-8 text-center'> 
               <a href="/">
-                <button className='text-center py-3 px-4 m-2 rounded-lg bg-white text-gray-700 font-bold text-xl sm:text-base md:text-base '> Demo </button>
+                <button className='text-center py-3 px-4 m-2 rounded-lg bg-white text-gray-700 font-bold text-base sm:text-base md:text-base '> Demo </button>
               </a>
               <a href="https://github.com/prince0010/PN">
-                <button className='text-center py-3 px-4 m-2 rounded-lg bg-white text-gray-700 font-bold text-xl sm:text-base md:text-base'> Code</button>
+                <button className='text-center py-3 px-4 m-2 rounded-lg bg-white text-gray-700 font-bold text-base sm:text-base md:text-base'> Code</button>
               </a>
                     </div>
                   </span>
@@ -82,10 +81,10 @@ const Work = () => {
                       Real Estate Web Application
                     <div className='pt-8 text-center'> 
               <a href="/">
-                <button className='text-center py-3 px-4 m-2 rounded-lg bg-white text-gray-700 font-bold text-xl sm:text-base md:text-base'> Demo </button>
+                <button className='text-center py-3 px-4 m-2 rounded-lg bg-white text-gray-700 font-bold text-base  sm:text-base md:text-base'> Demo </button>
               </a>
               <a href="https://github.com/prince0010/PN">
-                <button className='text-center py-3 px-4 m-2 rounded-lg bg-white text-gray-700 font-bold text-xl sm:text-base md:text-base'> Code</button>
+                <button className='text-center py-3 px-4 m-2 rounded-lg bg-white text-gray-700 font-bold text-base  sm:text-base md:text-base'> Code</button>
               </a>
                     </div>
                   </span>
@@ -104,10 +103,10 @@ const Work = () => {
                       Real Estate Web Application
                     <div className='pt-8 text-center'> 
               <a href="/">
-                <button className='text-center py-3 px-4 m-2 rounded-lg bg-white text-gray-700 font-bold text-xl sm:text-base md:text-base'> Demo </button>
+                <button className='text-center py-3 px-4 m-2 rounded-lg bg-white text-gray-700 font-bold text-base  sm:text-base md:text-base'> Demo </button>
               </a>
               <a href="/">
-                <button className='text-center py-3 px-4 m-2 rounded-lg bg-white text-gray-700 font-bold text-xl sm:text-base md:text-base'> Code</button>
+                <button className='text-center py-3 px-4 m-2 rounded-lg bg-white text-gray-700 font-bold text-base  sm:text-base md:text-base'> Code</button>
               </a>
                     </div>
                   </span>
@@ -126,10 +125,10 @@ const Work = () => {
                       Real Estate Web Application
                     <div className='pt-8 text-center'> 
               <a href="/">
-                <button className='text-center py-3 px-4 m-2 rounded-lg bg-white text-gray-700 font-bold text-xl sm:text-base md:text-base'> Demo </button>
+                <button className='text-center py-3 px-4 m-2 rounded-lg bg-white text-gray-700 font-bold text-base  sm:text-base md:text-base'> Demo </button>
               </a>
               <a href="/">
-                <button className='text-center py-3 px-4 m-2 rounded-lg bg-white text-gray-700 font-bold text-xl sm:text-base md:text-base'> Code</button>
+                <button className='text-center py-3 px-4 m-2 rounded-lg bg-white text-gray-700 font-bold text-base  sm:text-base md:text-base'> Code</button>
               </a>
                     </div>
                   </span>
@@ -148,11 +147,12 @@ const Work = () => {
                       Real Estate Web Application
                     <div className='pt-8 text-center'> 
               <a href="/">
-                <button className='text-center py-3 px-4 m-2 rounded-lg bg-white text-gray-700 font-bold text-xl sm:text-base md:text-base'> Demo </button>
+                <button className='text-center py-3 px-4 m-2 rounded-lg bg-white text-gray-700 font-bold text-base  sm:text-base md:text-base'> Demo </button>
               </a>
               <a href="/">
-                <button className='text-center py-3 px-4 m-2 rounded-lg bg-white text-gray-700 font-bold text-xl sm:text-base md:text-base'> Code</button>
+                <button className='text-center py-3 px-4 m-2 rounded-lg bg-white text-gray-700 font-bold text-base  sm:text-base md:text-base'> Code</button>
               </a>
+              
                     </div>
                   </span>
                 </div>

@@ -3,9 +3,10 @@
 import React, {useState} from 'react'
 import {FaBars, FaTimes, FaGithub, FaLinkedin, FaTwitter} from 'react-icons/fa'
 import Logo from '../assets/logo.png'
+import {Link} from 'react-scroll'
 
 const Navbar = () => {
-
+  //State default is false which is the setnav and nav
   // Keeping the state, nav and setnav is a created or gihunahunaan na value para sa useState naa sa sulod sa bracket ang nav og setnav since its value for the use of useState for the future
   // and returning a stateful value og function para ma update ang value og pwede ang function pud
   const [nav, setnav] = useState(false)
@@ -23,11 +24,24 @@ const Navbar = () => {
         {/* menu */}
         {/* hidden md:flex (THE md:?)is when the the width is 768 less it will hidden the unlisted and listed which is home,about,skills,work,contact */}
         <ul className='hidden md:flex '>
-          <li>Home</li>
-          <li>About</li>
-          <li>Skills</li>
-          <li>Work</li>
-          <li>Contact</li>
+          <li>
+            {/* This is from react-scroll package from npm install react-scroll */}
+            <Link  to="home" smooth={true} offset={10} duration={500} >
+           Home
+        </Link>
+        </li>
+          <li> <Link  to="about" smooth={true} offset={10} duration={500} >
+           About
+        </Link></li>
+          <li> <Link  to="skills" smooth={true} offset={10} duration={500} >
+           Skills
+        </Link></li>
+          <li> <Link  to="work" smooth={true} offset={10} duration={500} >
+           Work
+        </Link></li>
+          <li> <Link  to="contact" smooth={true} offset={10} duration={500} >
+           Contact
+        </Link></li>
         </ul>
 
       {/* Hamburger menu*/}
@@ -45,7 +59,9 @@ const Navbar = () => {
       
       <div className= {!nav ? 'hidden': 'absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center'}>
       <ul>
-           <li className='py-6 text-2xl'>Home</li>
+           <li className='py-6 text-2xl'>  <Link onClick={clickHandle}  to="home" smooth={true} offset={10} duration={500} >
+           Home
+        </Link></li>
           <li className='py-6 text-2xl'>About</li>
           <li className='py-6 text-2xl'>Skills</li>
           <li className='py-6 text-2xl'>Work</li>
