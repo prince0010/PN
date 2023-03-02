@@ -108,7 +108,7 @@ const Navbar = () => {
                 href="mailto:princenagac12@gmail.com">
                   {/* mailto: (is for linking your email acc into smth) */}
                   Gmail
-                  <SiGmail size={30} />
+                  <SiGmail size={30}/>
                 </a>
                </li>
         </ul>
