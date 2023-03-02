@@ -2,7 +2,7 @@ import React from 'react'
 
 const FrontEnd = () => {
   return (
-   <h2 className='font-bold text-3xl sm:text-4xl text-[#9ea8c8]'> Front-End Developer</h2>
+   <h2 className='font-bold text-3xl sm:text-4xl text-[#9ea8c8]'> <span className='text-orange-300'> Front-End </span> Developer</h2>
   )
 }
 

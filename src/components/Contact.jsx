@@ -3,7 +3,8 @@ import loogo from '../assets/node.png'
 const Contact = () => {
   return (
     <div name = 'contact' className='bg-[#0a192f] w-full h-screen flex justify-center items-center p-4'>
-      <form method = "" action = "" className='flex flex-col max-w-[600px] w-full'>
+     {/* The action endpoint or that link is from the getform.io, just login there and create a formendpoint and copy and paste the endpoint or the link in the action and dont forget to add the method = "POST" the method is important  */}
+      <form method = "POST" action = "https://getform.io/f/f5c4e7cf-59db-47f2-8e81-aa161f5f3890" className='flex flex-col max-w-[600px] w-full'>
         <div className='pb-4 py-16'>
             <p className='inline border-b-4 border-orange-300 text-gray-300 text-3xl font-bold'>
               Contact

@@ -20,7 +20,7 @@ const Home = () => {
 
         <p className='text-orange-300'>Hi I'm: </p>
         {/* sm:text-4xl is like pag mu exceed nas 640px ata na pixel mudako ang objects like fonts, images, etc. sa specific na xl gihatag sa sm:text-4xl */}
-        <h1 className='text-[#ccd6f6] font-bold text-3xl sm:text-4xl'>Prince Nagac</h1>
+        <h1 className='text-[#ccd6f6] font-bold text-3xl sm:text-5xl'>Prince <span className='text-orange-300'> Nagac </span></h1>
       {/* Front-End Text */}
         <FrontEnd />
         {/* Description about me text */}
