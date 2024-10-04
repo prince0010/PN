@@ -1,11 +1,15 @@
 import React from 'react'
-import RealEstate from '../assets/projects/realestate.jpg'
-import WorkImg from '../assets/projects/workImg.jpeg'
+import BFP from '../assets/projects/bfp.png'
+import Narva from '../assets/projects/login.png'
+import PCIS from '../assets/projects/PCISlogin.png'
+import Tasktd from '../assets/projects/index_task.png'
+import BookR from '../assets/projects/index.png'
+import TaskList from '../assets/projects/task_list.png'
 
 const Work = () => {
   return (
     // Parent Div
-    <div name = 'work' className='pt-10 bg-[#0a192f] lg:h-[120vh] md:h-screen w-full text-gray-300'>
+    <div name = 'work' className='pt-15 bg-[#0a192f] lg:h-[120vh] md:h-screen w-full text-gray-300'>
         {/* Child Div Container of Content in the Parent DIV */}
         <div className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center h-full w-full' >
             {/* Container for P tag */}
@@ -30,14 +34,14 @@ const Work = () => {
           {/* the content-div is a custom css for the Images that will be add in this card content like background-img: no-repeat, just look the custom css that I add in the index.css */}
           
           {/* Grid Items (Work Card Images and its Information ) */}
-              <div style={{backgroundImage: `url(${WorkImg})`}} 
+              <div style={{backgroundImage: `url(${Narva})`}} 
               className='shadow-lg shadow-[#030c16] rounded-md group container flex justify-center items-center mx-auto content-div'>   
                 {/*Hover effects*/}
                 <div className='opacity-0 group-hover:opacity-100'>
                   {/* Card */}
                   {/* tracking-wider is letter spacing in tailwind css */}
                   <span className='lg:text-xl font-bold text-white tracking-wider sm:text-base md:text-base'>
-                      REACT JS Application
+                      Narva
                     <div className='pt-8 text-center'> 
               <a href="/">
                 <button className='text-center py-3 px-4 m-2 rounded-lg bg-white text-gray-700 font-bold text-xl sm:text-base md:text-base'> Demo </button>
@@ -51,14 +55,14 @@ const Work = () => {
               </div>
 
       {/* 2nd Grid Item (Work Card Images and its information)  */}
-              <div style={{backgroundImage: `url(${RealEstate})`}} 
+              <div style={{backgroundImage: `url(${BFP})`}} 
               className='shadow-lg shadow-[#030c16] rounded-md group container flex justify-center items-center mx-auto content-div'>   
                 {/*Hover effects*/}
                 <div className='opacity-0 group-hover:opacity-100'>
                   {/* Card */}
                   {/* tracking-wider is letter spacing in tailwind css */}
-                  <span className=' lg:text-xl text-base font-bold text-white sm:text-base md:text-base tracking-normal'>
-                      Real Estate Web Application
+                  <span className=' lg:text-xl text-base font-bold text-white sm:text-base md:text-base tracking-normal text-center'>
+                     BOFP Fire Inspection Certificate System
                     <div className='pt-8 text-center'> 
               <a href="/">
                 <button className='text-center py-3 px-4 m-2 rounded-lg bg-white text-gray-700 font-bold text-base sm:text-base md:text-base '> Demo </button>
@@ -71,14 +75,14 @@ const Work = () => {
                 </div>
               </div>
               {/* 3rd Grid Item  (Work Card Images and its information)  */}
-              <div style={{backgroundImage: `url(${WorkImg})`}} 
+              <div style={{backgroundImage: `url(${PCIS})`}} 
               className='shadow-lg shadow-[#030c16] rounded-md group container flex justify-center items-center mx-auto content-div'>   
                 {/*Hover effects*/}
                 <div className='opacity-0 group-hover:opacity-100'>
                   {/* Card */}
                   {/* tracking-wider is letter spacing in tailwind css */}
                   <span className=' lg:text-xl text-base font-bold text-white sm:text-base md:text-base tracking-normal'>
-                      Real Estate Web Application
+                     Police Clearance Issuance System 
                     <div className='pt-8 text-center'> 
               <a href="/">
                 <button className='text-center py-3 px-4 m-2 rounded-lg bg-white text-gray-700 font-bold text-base  sm:text-base md:text-base'> Demo </button>
@@ -93,14 +97,14 @@ const Work = () => {
         {/* End of 3rd Item Grid (Work Card Images and its information) */}
 
            {/* 4th Grid Item  (Work Card Images and its information)  */}
-           <div style={{backgroundImage: `url(${RealEstate})`}} 
+           <div style={{backgroundImage: `url(${Tasktd})`}} 
               className='shadow-lg shadow-[#030c16] rounded-md group container flex justify-center items-center mx-auto content-div'>   
                 {/*Hover effects*/}
                 <div className='opacity-0 group-hover:opacity-100'>
                   {/* Card */}
                   {/* tracking-wider is letter spacing in tailwind css */}
                   <span className=' lg:text-xl text-base font-bold text-white sm:text-base md:text-base tracking-normal'>
-                      Real Estate Web Application
+                      Laravel Task List App
                     <div className='pt-8 text-center'> 
               <a href="/">
                 <button className='text-center py-3 px-4 m-2 rounded-lg bg-white text-gray-700 font-bold text-base  sm:text-base md:text-base'> Demo </button>
@@ -115,14 +119,14 @@ const Work = () => {
         {/* End of 4th Item Grid (Work Card Images and its information) */}
 
            {/* 5th Grid Item  (Work Card Images and its information)  */}
-           <div style={{backgroundImage: `url(${WorkImg})`}} 
+           <div style={{backgroundImage: `url(${BookR})`}} 
               className='shadow-lg shadow-[#030c16] rounded-md group container flex justify-center items-center mx-auto content-div'>   
                 {/*Hover effects*/}
                 <div className='opacity-0 group-hover:opacity-100'>
                   {/* Card */}
                   {/* tracking-wider is letter spacing in tailwind css */}
                   <span className=' lg:text-xl text-base font-bold text-white sm:text-base md:text-base tracking-normal'>
-                      Real Estate Web Application
+                      Book Review Website
                     <div className='pt-8 text-center'> 
               <a href="/">
                 <button className='text-center py-3 px-4 m-2 rounded-lg bg-white text-gray-700 font-bold text-base  sm:text-base md:text-base'> Demo </button>
@@ -137,14 +141,14 @@ const Work = () => {
         {/* End of 5th Item Grid (Work Card Images and its information) */}
 
            {/* 6th Grid Item  (Work Card Images and its information)  */}
-           <div style={{backgroundImage: `url(${RealEstate})`}} 
+           <div style={{backgroundImage: `url(${TaskList})`}} 
               className='shadow-lg shadow-[#030c16] rounded-md group container flex justify-center items-center mx-auto content-div'>   
                 {/*Hover effects*/}
                 <div className='opacity-0 group-hover:opacity-100'>
                   {/* Card */}
                   {/* tracking-wider is letter spacing in tailwind css */}
                   <span className=' lg:text-xl text-base font-bold text-white sm:text-base md:text-base tracking-normal'>
-                      Real Estate Web Application
+                      Task Todo List Web App
                     <div className='pt-8 text-center'> 
               <a href="/">
                 <button className='text-center py-3 px-4 m-2 rounded-lg bg-white text-gray-700 font-bold text-base  sm:text-base md:text-base'> Demo </button>

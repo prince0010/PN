@@ -35,10 +35,10 @@ const Navbar = () => {
            About
         </Link></li>
           <li> <Link  to="skills" smooth={true} offset={10} duration={500} >
-           Skills
+           Tech Stack
         </Link></li>
           <li> <Link  to="work" smooth={true} offset={10} duration={500} >
-           Work
+           Projects
         </Link></li>
           <li> <Link  to="contact" smooth={true} offset={10} duration={500} >
            Contact
@@ -67,7 +67,7 @@ const Navbar = () => {
            About
         </Link></li>
           <li className='py-6 text-2xl'><Link onClick={clickHandle} to="skills" smooth={true} offset={5} duration={500} >
-           Skills
+           Tech Stack
         </Link></li>
           <li className='py-6 text-2xl'><Link onClick={clickHandle} to="work" smooth={true} offset={5} duration={500} >
            Work

@@ -14,7 +14,7 @@ const Home = () => {
   return (
     <div name='home' className='w-full h-screen bg-[#0a192f]'>
       {/* Flex container for text and image, adjusted for a larger view */}
-      <div className='max-w-[1000px] mx-auto px-8 flex justify-between items-center h-full'>
+      <div className='max-w-[1200px] mx-auto px-8 flex justify-between items-center h-full'>
         {/* Text container */}
         <div className='flex flex-col justify-center'>
           <p className='text-orange-300'>Hi I'm:</p>
