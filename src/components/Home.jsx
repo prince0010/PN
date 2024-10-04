@@ -4,32 +4,24 @@ import {HiArrowNarrowRight} from 'react-icons/hi'
 import FrontEnd from './Text/FrontEnd';
 import Homedefinition from './Text/Homedefinition';
 import {Link} from 'react-scroll';
+import profileImage from './../assets/_LDCU_2684.jpg';
 
 const Home = () => {
 
   function buttonClicked () {
       console.log(' Test Clicked');
   }
-
   return (
-    // Main Container
-    <div name ='home' className='w-full h-screen bg-[#0a192f]'>
-        
-      {/* Container for text */}
-      {/* mx-auto can center the container div */}
-      <div className='max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full'>
-
-        <p className='text-orange-300'>Hi I'm: </p>
-        {/* sm:text-4xl is like pag mu exceed nas 640px ata na pixel mudako ang objects like fonts, images, etc. sa specific na xl gihatag sa sm:text-4xl */}
-        <h1 className='text-[#ccd6f6] font-bold text-3xl sm:text-5xl'>Prince <span className='text-orange-300'> Nagac </span></h1>
-      {/* Front-End Text */}
-        <FrontEnd />
-        {/* Description about me text */}
-         <Homedefinition />
-          
-
-        {/* Container for Button */}
-        <div>
+    <div name='home' className='w-full h-screen bg-[#0a192f]'>
+      {/* Flex container for text and image, adjusted for a larger view */}
+      <div className='max-w-[1000px] mx-auto px-8 flex justify-between items-center h-full'>
+        {/* Text container */}
+        <div className='flex flex-col justify-center'>
+          <p className='text-orange-300'>Hi I'm:</p>
+          <h1 className='text-[#ccd6f6] font-bold text-3xl sm:text-5xl'>Prince <span className='text-orange-300'>Nagac</span></h1>
+          <FrontEnd />
+          <Homedefinition />
+          <div>
           <button className=' group text-white border-2 px-4 py-3 my-3 flex items-center font-bold hover:bg-orange-300 hover:border-orange-300 hover:text-black rounded-full' onClick={buttonClicked}>
           {/* ang Link is naa na sa react-scroll na package and it is passing the component to the higher order which is the button and pag i click is i redirect siya sa naay "name na work"
           (name=work ==> to = "work") and naa na sa Navbar.jsx which is global siya sa Link lang since nag link sila gikan sa navbar and pwede ra niya tawagon sa lain component since Link na
@@ -48,10 +40,20 @@ const Home = () => {
            </span>
           </button>
         </div>
+        </div>
+
+        {/* Image on the right side, adjusted to cover and focus on the top */}
+        <img src={profileImage} 
+         style={{
+          height: 'auto',
+          objectFit: 'cover',
+          objectPosition: window.innerWidth > 960 ? 'center top' : 'center center',
+        }}
+        alt="Prince Nagac" className="w-96 h-96 object-cover object-top" />
       </div>
     </div>
-    
   )
 }
+
 
 export default Home
